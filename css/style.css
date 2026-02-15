@@ -1,0 +1,94 @@
+/* ===== Tag-based styling ===== */
+body {
+    background-color: #e0f7fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #00695c;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #004d40;
+    text-align: center;
+}
+
+/* ===== Classes ===== */
+.title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.8em;
+    margin-bottom: 8px;
+}
+
+.text {
+    margin: 5px 0;
+}
+
+.intro {
+    padding: 20px;
+    background-color: #b2dfdb;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.list {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+/* ===== Flexbox layout ===== */
+.flex-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 15px;
+}
+
+.flex-item {
+    flex: 1;
+}
+
+/* Image styling */
+.image {
+    display: block;
+    margin: 10px auto;
+}
+
+.caption {
+    text-align: center;
+    font-style: italic;
+}
+
+/* ===== IDs ===== */
+#main-header, #secondary-header {
+    background-color: #004d40;
+    color: white;
+    padding: 15px;
+}
+
+#main-footer, #secondary-footer {
+    background-color: #00695c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#main-footer a, #secondary-footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#main-footer a:hover, #secondary-footer a:hover {
+    text-decoration: underline;
+}
