@@ -1,94 +1,90 @@
-/* ===== Tag-based styling ===== */
+/* General Page Styling */
 body {
-    background-color: #e0f7fa;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #ffffff;
+    color: #222222; /* High contrast text */
+    line-height: 1.6;
 }
 
-h1, h2 {
+/* Header */
+header {
+    background-color: #003366;
+    color: white;
     text-align: center;
-    color: #00695c;
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #004d40;
-    text-align: center;
-}
-
-/* ===== Classes ===== */
-.title {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    font-size: 1.8em;
-    margin-bottom: 8px;
-}
-
-.text {
-    margin: 5px 0;
-}
-
-.intro {
     padding: 20px;
-    background-color: #b2dfdb;
-    border-radius: 10px;
-    margin: 15px;
 }
 
-.list {
-    margin: 10px 0;
-    padding-left: 20px;
+/* Navigation */
+nav {
+    background-color: #0055aa;
 }
 
-/* ===== Flexbox layout ===== */
-.flex-container {
+nav ul {
+    list-style: none;
     display: flex;
-    gap: 20px;
     justify-content: center;
-    align-items: flex-start;
-    margin: 15px;
-}
-
-.flex-item {
-    flex: 1;
-}
-
-/* Image styling */
-.image {
-    display: block;
-    margin: 10px auto;
-}
-
-.caption {
-    text-align: center;
-    font-style: italic;
-}
-
-/* ===== IDs ===== */
-#main-header, #secondary-header {
-    background-color: #004d40;
-    color: white;
-    padding: 15px;
-}
-
-#main-footer, #secondary-footer {
-    background-color: #00695c;
-    color: white;
+    margin: 0;
     padding: 10px;
-    text-align: center;
 }
 
-#main-footer a, #secondary-footer a {
-    color: #ffffff;
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-#main-footer a:hover, #secondary-footer a:hover {
+nav a:hover {
     text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive Design Media Query */
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 15px;
+    }
 }
