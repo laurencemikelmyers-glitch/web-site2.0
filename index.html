@@ -2,50 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Benefits of Exercise</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benefits of Exercise</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Benefits of Exercise</h1>
-</header>
+    <div class="container my-5">
 
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="page2.html">Learn more about healthy nutrition habits</a></li>
-    </ul>
-</nav>
+        <!-- Header -->
+        <header class="text-center mb-5">
+            <h1 class="display-4 custom-title">Benefits of Exercise</h1>
+            <p class="lead">Why staying active improves your life</p>
+        </header>
 
-<main>
+        <!-- Grid Section -->
+        <div class="row g-4">
 
-    <section>
-        <h2>Why Exercise Is Important</h2>
-        <p>Regular exercise improves physical health, mental health, and overall well-being.</p>
+            <div class="col-md-6">
+                <div class="card custom-card p-3">
+                    <h2 class="h4">Physical Benefits</h2>
+                    <p>
+                        Exercise strengthens the heart, builds muscle, improves flexibility,
+                        and helps maintain a healthy weight.
+                    </p>
+                </div>
+            </div>
 
-        <h3>Physical Benefits</h3>
-        <p>Exercise strengthens the heart, improves muscle tone, and increases endurance.</p>
+            <div class="col-md-6">
+                <div class="card custom-card p-3">
+                    <h2 class="h4">Mental Benefits</h2>
+                    <p>
+                        Regular physical activity reduces stress, boosts mood,
+                        improves sleep, and increases overall confidence.
+                    </p>
+                </div>
+            </div>
 
-        <img src="images/running.jpg" 
-             alt="Person jogging outdoors in a park during sunrise">
-    </section>
+        </div>
 
-    <section>
-        <h2>Mental Health Benefits</h2>
-        <p>Exercise reduces stress, anxiety, and improves mood through endorphin release.</p>
+        <!-- Button Section -->
+        <div class="text-center mt-5">
+            <a href="#" class="btn btn-primary btn-lg">
+                Learn More About Fitness
+            </a>
+        </div>
 
-        <img src="images/yoga.jpg" 
-             alt="Person practicing yoga in a calm indoor environment">
-    </section>
-
-</main>
-
-<footer>
-    <p>&copy; 2026 Educational Website | Designed for Accessibility</p>
-</footer>
+    </div>
 
 </body>
 </html>
